@@ -7,6 +7,7 @@
 [githup deploy key](https://eladticserch.cn/esplore)
 https://developer.githup.com/v3/guides/managing-deloy-keys/#deploy-keys
 https://developer.github.com/apps/
+https://spring.io/guides/gs/accessing-data-mysql/
 ##工具
 [git](https://git-scm.com/download)
 [visval-paradigm](https://www.visual-paradigm.com)
