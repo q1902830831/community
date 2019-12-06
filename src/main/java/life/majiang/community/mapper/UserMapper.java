@@ -3,6 +3,8 @@ package life.majiang.community.mapper;
 import life.majiang.community.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
 /**
  * Created by Administrator on 2019/12/5 0005.
  */
@@ -10,4 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserMapper {
     @Insert("INSERT INTO USER(ACCOUNT_ID,NAME,TOKEN,GMT_CREATE,GMT_MODIFIED) VALUES (#{accountId},#{name},#{token},#{gmtCreate},#{gmtModified})")
     void insert(User user);
+
+    @Select("select * from user where token =#{token}")
+    User findByToken(String token);
 }
